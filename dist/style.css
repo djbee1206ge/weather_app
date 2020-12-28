@@ -84,18 +84,18 @@ main {
   width: 96vw;
 }
 
-main .user-form {
+main .city-form {
   width: 100%;
   max-width: 44rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-main .user-form input {
+main .city-form input {
   width: 100%;
   display: block;
   background-color: rebeccapurple;
-  border: none;
+  border: 1px solid rebeccapurple;
   font-family: inherit;
   font-size: 1.125rem;
   color: var(--fg-100);
@@ -105,41 +105,43 @@ main .user-form input {
   box-shadow: 0 0.25rem 0.625rem rgba(154, 160, 185, 0.05) 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
 }
 
-main .user-form input::placeholder {
+main .city-form input::placeholder {
   color: #e2e0e0;
 }
 
-main .user-form input:focus {
+main .city-form input:focus {
   outline: none;
+  background-color: white;
 }
 
 @media (max-width: 44rem) {
-  main .user-form input {
+  main .city-form input {
     padding: 0.5rem 1rem;
     margin: 1rem 2vw;
     width: 96vw;
   }
 }
 
-main .user-card {
+main .city-card {
   width: 96vw;
   padding: 1rem;
   border-radius: 1.5rem;
   background: rebeccapurple;
+  color: white;
   box-shadow: 0 0.25rem 0.625rem rgba(154, 160, 185, 0.05), 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
 }
 
-main .user-info {
+main .city-info {
   width: 20rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-main .user-info p {
+main .city-info p {
   margin-top: 1rem;
 }
 
-main .user-info ul {
+main .city-info ul {
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -147,13 +149,29 @@ main .user-info ul {
   gap: 0.5rem;
 }
 
-main .user-info ul li {
+main .city-info ul li {
   display: flex;
   justify-content: space-between;
 }
 
-main .user-info ul li span {
+main .city-info ul li span {
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+main .city-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .city-header h2 {
+  font-size: 2rem;
+}
+
+main .city-header img {
+  border-radius: 50%;
+  background-image: radial-gradient(white 0%, white 10%, rebeccapurple 80%, rebeccapurple 100%);
+  background-blend-mode: hard-light;
 }
 /*# sourceMappingURL=style.css.map */

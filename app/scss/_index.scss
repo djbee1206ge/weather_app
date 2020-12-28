@@ -11,7 +11,7 @@ main {
   justify-content: center;align-items: center;
   width: 96vw;
   
-  .user{
+  .city{
     &-form {
       width: 100%;
       max-width: 44rem;
@@ -21,7 +21,7 @@ main {
         width: 100%;
         display: block;
         background-color: rebeccapurple;
-        border: none;
+        border: 1px solid rebeccapurple;;
         font-family: inherit;
         font-size: 1.125rem;
         color: var(--fg-100);
@@ -36,6 +36,7 @@ main {
         }
         &:focus{
           outline: none;
+          background-color: white;
         }
         @media (max-width: 44rem){
           padding: 0.5rem 1rem;
@@ -49,6 +50,7 @@ main {
       padding: 1rem;
       border-radius: 1.5rem;
       background: rebeccapurple;
+      color: white;
       box-shadow: 
       0 0.25rem 0.625rem rgba(154,160, 185, 0.05),
       0 1rem 2.5rem rgba(0, 0, 0, 0.1);
@@ -77,10 +79,24 @@ main {
       }
   
     }
-    
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        font-size: 2rem;
+      }
+      img {
+        border-radius: 50%;
+        background-image: radial-gradient( white 0%,white 10%, rebeccapurple 80%, rebeccapurple 100%, );
+        background-blend-mode: hard-light;
+      }
+    }
 
   }
+  
 
+  
 }
 
 
