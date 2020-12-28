@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 100%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--br);
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --clr-body: #fafafa;
+  --clr-text--default: #222222;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.3;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--clr-body);
+  color: var(--clr-text--default);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 96vw;
+}
+
+main .user-form {
+  width: 100%;
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .user-form input {
+  width: 100%;
+  display: block;
+  background-color: rebeccapurple;
+  border: none;
+  font-family: inherit;
+  font-size: 1.125rem;
+  color: var(--fg-100);
+  padding: 1rem 1.75rem;
+  border-radius: 0.625rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(154, 160, 185, 0.05) 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+}
+
+main .user-form input::placeholder {
+  color: #e2e0e0;
+}
+
+main .user-form input:focus {
+  outline: none;
+}
+
+@media (max-width: 44rem) {
+  main .user-form input {
+    padding: 0.5rem 1rem;
+    margin: 1rem 2vw;
+    width: 96vw;
+  }
+}
+
+main .user-card {
+  width: 96vw;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background: rebeccapurple;
+  box-shadow: 0 0.25rem 0.625rem rgba(154, 160, 185, 0.05), 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+}
+
+main .user-info {
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .user-info p {
+  margin-top: 1rem;
+}
+
+main .user-info ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main .user-info ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .user-info ul li span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
