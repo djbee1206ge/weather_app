@@ -81,12 +81,21 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 96vw;
+  width: 44rem;
+}
+
+@media (max-width: 44rem) {
+  main {
+    width: 95vw;
+  }
+}
+
+main article {
+  width: 100%;
 }
 
 main .city-form {
   width: 100%;
-  max-width: 44rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -114,27 +123,12 @@ main .city-form input:focus {
   background-color: white;
 }
 
-@media (max-width: 44rem) {
-  main .city-form input {
-    padding: 0.5rem 1rem;
-    margin: 1rem 2vw;
-    width: 96vw;
-  }
-}
-
 main .city-card {
-  width: 96vw;
   padding: 1rem;
   border-radius: 1.5rem;
   background: rebeccapurple;
   color: white;
   box-shadow: 0 0.25rem 0.625rem rgba(154, 160, 185, 0.05), 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
-}
-
-main .city-info {
-  width: 20rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 main .city-info p {

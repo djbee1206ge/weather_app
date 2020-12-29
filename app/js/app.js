@@ -32,9 +32,6 @@ async function getcity(cityname) {
           <h2>${city.name}</h2>
           <img src="${iconURL}" />
         </div>
-
-        
-        
         <ul>
         <li>Weather: <span>${city.weather[0].description}</span></li>
           <li>Temperature <span>${(city.main.temp - 273.15).toFixed(1)}°C</span></li> 
@@ -43,7 +40,6 @@ async function getcity(cityname) {
           <li>Wind Speed <span>${(city.wind.speed * 3.6).toFixed(1)} km/hr</span> </li>
           <li>Wind Direction <span style="transform: rotate(${city.wind.deg}deg)">&uarr;</span> </li>
         </ul>
-
       </div>
     </div>
       `
@@ -58,6 +54,7 @@ async function getcity(cityname) {
     if (city) {
       getcity(city)
       search.value = ''
+      search.style.backgroundColor = 'rebeccapurple;'
     }
   })
 }
